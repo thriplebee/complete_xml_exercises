@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!-- Convert xml code into a XML Dom object and access elements -->
+
+<body>
+    <p id="xml-data"></p>
+    <script>
+        const text = `<movie>
+          <name>Jungle Cruise</name>
+          <realease>July 30, 2021 (USA)</realease>
+          <imdb>7.0</imdb>
+          <boxoffice>600 M. USD</boxoffice>
+        </movie>`;
+
+        // Create parser object
+        const parser = new DOMParser();
+        // Convert xml code into a XML DOM object
+        const xmlDoc = parser.parseFromString(text, "text/xml");
+
+        // Access data from the DOM/XML Code
+        console.log(xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue);
+        document.getElementById("xml-data").innerHTML = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+    </script>
+</body>
+
+</html>

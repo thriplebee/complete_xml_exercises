@@ -1,0 +1,10 @@
+<!ELEMENT movies (movie)*>
+<!ATTLIST movie out CDATA "yes">
+<!ELEMENT movie (name,release,imdb,boxoffice,credits)>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name lang CDATA #FIXED "en">
+<!ELEMENT release (#PCDATA)>
+<!ELEMENT imdb (#PCDATA)>
+<!ELEMENT boxoffice (#PCDATA)>
+<!ELEMENT credits (#PCDATA)>
+<!ENTITY copyright "Copyright ThripleBee">

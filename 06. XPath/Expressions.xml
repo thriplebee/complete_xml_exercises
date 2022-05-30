@@ -1,0 +1,85 @@
+<!--################### XPath Expressions ###################-->
+
+<!-- Select the document node -->
+/
+
+<!-- Select the 'root' element -->
+/movies
+
+<!-- Select all 'movie' elements that are direct children of the 'movies' element. -->
+/movies/movie
+
+<!-- Select all 'name' elements that are direct children of the 'movie' element. -->
+/movies/movie/name
+
+<!-- Select all the elements in the document. -->
+//*
+
+<!-- Select all 'name' elements regardless of their positions in the document -->
+//name
+
+<!-- Select first 'movie' element. -->
+/movies/movie[1]
+
+<!-- Select all the children of the 'cast' element of fifth 'movie' element. -->
+/movies/movie[5]/cast/*
+
+<!-- Select last actor of every 'movie' element. -->
+/movies/movie/cast/actor[last()]
+
+<!-- Select first 3 'movie' elements -->
+/movies/movie[position() < 4]
+
+<!-- Select the textual value of the 'imdb' element of all 'movie' elements . -->
+//imdb/text()
+
+<!-- Select the textual value of second movie 'name' element. -->
+/movies/movie[2]/name/text()
+
+<!-- Select the textual value of last movie 'name' element. -->
+/movies/movie[last()]/name/text()
+
+<!-- Select all 'movie' elements with the 'release' element value is '2021-10-29'. -->
+/movies/movie[release = "2021-10-29"]
+
+<!-- Select all 'movie' elements with the 'imdb' element value is greater than or equal '7.0'. -->
+/movies/movie[imdb >= "7.0"]
+
+<!-- Select the 'id' attribute of the 'actor' elements that are direct children of the 'cast'. -->
+/movies/movie/cast/actor/@id
+
+<!-- Select all 'movie' elements that have an 'id' attribute. -->
+//movie[@id]
+
+<!-- Select all 'name' elements that have an 'lang' attribute value of 'hi'. -->
+/movies/movie/name[@lang = "en"]
+
+<!-- Select all 'movie' elements that have an 'lang' attribute value of 'hi'. -->
+/movies/movie[name[@lang = "hi"]]
+
+<!-- Select textual value of the 'name' element of all 'actor' elements that have an 'gender' attribute value of 'female'. -->
+//actor/name[@gender = "female"]/text()
+
+<!-- Select all 'boxoffice' elements AND all 'imdb' elements -->
+//boxoffice|//imdb
+
+<!-- Select the name of the second element of the first 'movie' element -->
+name(//movie[1]/*[2])
+
+<!-- Select the numeric value of 'imdb' element of the last 'movie' element -->
+number(/movies/movie[last()]/imdb)
+
+<!-- Select the string representation value of the 'country' element of the 'movie' element with imdb equal to '4.3'. -->
+string(//movie[imdb = "4.3"]/country)
+
+<!-- Select the length of the 'name' element's textual value of the first 'actor' element of the sixth 'movie' element. -->
+string-length(//movie[6]/cast/actor[1]/name/text())
+
+<!-- Select the local name of the 'country' element of the first 'movie' element, i.e. without the namespace. -->
+local-name(//movie[1]/country)
+
+<!-- Select the number of 'movie' elements. -->
+count(/movies/movie)
+
+<!-- Select the sum of all 'age' elements of all 'actor' elements of second 'movie' element. -->
+sum(//movie[2]/cast/actor/age)

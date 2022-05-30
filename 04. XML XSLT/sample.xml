@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample.xsl"?>
+<!-- Xml with movies -->
+<movies>
+    <movie>
+        <name>Jungle Cruise</name>
+        <director>Jaume Collet-Serra</director>
+        <release>July 30, 2021 (USA)</release>
+        <imdb>7.0</imdb>
+    </movie>
+    <movie>
+        <name>Antlers</name>
+        <director>Scott Cooper</director>
+        <release>October 29, 2021 (USA)</release>
+        <imdb>7.5</imdb>
+    </movie>
+    <movie>
+        <name>Spider Man No Way Home</name>
+        <director>Jon Watts</director>
+        <release>December 17, 2021 (USA)</release>
+        <imdb>8.8</imdb>
+    </movie>
+</movies>

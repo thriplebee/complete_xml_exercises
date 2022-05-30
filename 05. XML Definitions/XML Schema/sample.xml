@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<songs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="sample.xsd">
+    <song age="13">
+        <name lang="en">Earth Song</name>
+        <artist>Michael Jackson</artist>
+        <year>1999</year>
+        <length>3.5</length>
+    </song>
+    <song age="15">
+        <name lang="en">Get Up Stand Up</name>
+        <artist>Bob Marley</artist>
+        <year>1990</year>
+        <length>3.2</length>
+    </song>
+    <song age="14">
+        <name lang="en">Shape Of You</name>
+        <artist>Ed Sheeran</artist>
+        <year>2018</year>
+        <length>4.0</length>
+    </song>
+</songs>

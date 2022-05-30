@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+    <movie out="yes">
+        <name lang="en">Jungle Cruise</name>
+        <release>July 30, 2021 (USA)</release>
+        <imdb>7.0</imdb>
+        <boxoffice>600 M. USD</boxoffice>
+    </movie>
+    <movie out="yes">
+        <name lang="en">Spider Man No Way Home</name>
+        <release>December 17, 2021 (USA)</release>
+        <imdb>8.8</imdb>
+        <boxoffice>1.5 B. USD</boxoffice>
+    </movie>
+</movies>

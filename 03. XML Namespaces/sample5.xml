@@ -1,0 +1,21 @@
+<!-- All child elements with the same prefix are associated with the same namespace -->
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:m="http://www.imdb.org/hollywood/movies"
+    xmlns:c="http://www.imdb.org/hollywood/casts">
+    <m:movie id="5">
+        <m:name>Antlers</m:name>
+        <m:director>Scott Cooper</m:director>
+        <m:release>October 29, 2021 (USA)</m:release>
+    </m:movie>
+
+    <c:movie id="5">
+        <c:actor>
+            <c:name>Jesse Plemons</c:name>
+            <c:age>40</c:age>
+        </c:actor>
+        <c:actor>
+            <c:name>Keri Russell</c:name>
+            <c:age>35</c:age>
+        </c:actor>
+    </c:movie>
+</root>

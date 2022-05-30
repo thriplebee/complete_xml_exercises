@@ -1,0 +1,13 @@
+<!-- Default namespace -->
+<?xml version="1.0" encoding="UTF-8"?>
+<movie id="5"
+    xmlns="http://www.imdb.org/hollywood/casts">
+    <actor>
+        <name>Jesse Plemons</name>
+        <age>40</age>
+    </actor>
+    <actor>
+        <name>Keri Russell</name>
+        <age>35</age>
+    </actor>
+</movie>
